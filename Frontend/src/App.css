@@ -1,0 +1,110 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #666;
+}
+
+.chat {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 400px;
+  max-height: 60vh;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+.welcome {
+  text-align: center;
+  padding: 100px 10px;
+  color: #666;
+}
+
+.message {
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.message.user {
+  background: #e8f1ff;
+}
+
+.message.assistant {
+  background: #f1f3f5;
+}
+
+.message p {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.sources {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.sources div {
+  margin-top: 6px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.input-area input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.input-area button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #2459c4;
+  color: white;
+  cursor: pointer;
+}
+
+.input-area button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading {
+  color: #666;
+}

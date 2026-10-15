@@ -1,0 +1,23 @@
+
+# Environment variables and API keys
+.env
+.env.*
+!.env.example
+**/.env
+
+# Python virtual environments and cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local vector database
+Backend/storage/
+
+# Frontend dependencies and build files
+frontend/node_modules/
+frontend/dist/
+
+# System and editor files
+.DS_Store
+.vscode/
